@@ -6,12 +6,10 @@ function esAnagrama(str1, str2) {
   // con las mismas letras que otra, pero en orden diferente.
   // Tu código:
 
-  for (let i = 0; i < str1.length; i++) {
-    for (let e = 0; e < str2.length; e++) {
-      if (str1[i] == str2[e]) return true;
-      else return false;
-    }
-  }
+  var palabra1 = str1.toLowerCase().replace(" ", "").split("").sort().join("");
+  var palabra2 = str2.toLowerCase().replace(" ", "").split("").sort().join("");
+  if (palabra1 === palabra2) return true;
+  else return false;
 }
 
 module.exports = esAnagrama;

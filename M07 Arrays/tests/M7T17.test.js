@@ -1,4 +1,4 @@
-const breakStatement = require('../ejercicios/18');
+const breakStatement = require('../ejercicios/17');
 
 test('Debe retornar un arreglo con los elementos incrementados en dos', function () {
   expect(breakStatement(50)).toEqual([52, 54, 56, 58, 60, 62, 64, 66, 68, 70]);
