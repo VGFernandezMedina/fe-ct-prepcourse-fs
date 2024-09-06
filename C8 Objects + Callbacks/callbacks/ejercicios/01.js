@@ -3,7 +3,7 @@ function invocarCallback(cb) {
   // NOTA: no debes retornar nada.
   // Tu código:
 
-   cb();
+   cb(); 
 }
 
 module.exports = invocarCallback;
